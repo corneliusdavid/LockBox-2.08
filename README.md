@@ -3,6 +3,6 @@ Version 2.08 of the source code from the old TurboPower open-sourced LockBox Lib
 
 For other, probably more current versions of Lockbox and for 64-bit support, see the following repositories:
 
-* [Jaro Lockbox2](https://github.com/jarto/lockbox2)
+* [Jarto Lockbox2](https://github.com/jarto/lockbox2)
 * [TurboPack LockBox](https://github.com/TurboPack/LockBox)
 * [TurboPack LockBox3](https://github.com/TurboPack/LockBox3)
