@@ -150,6 +150,17 @@
  {$ENDIF}
 {$ENDIF}
 
+{$IFDEF VER300}               { Delphi 10 Seattle }
+  {$DEFINE VERSION6}          { Version 6 or greater }
+  {$DEFINE VERSION7}
+  {$DEFINE VERSION2005orHigher}
+  {$DEFINE DelphiUnicode}
+ {$IFDEF BCB}
+  {$DEFINE CBuilder}
+  {$ObjExportAll On}
+ {$ENDIF}
+{$ENDIF}
+
 
 { determine whether CLX is used, should always be on Linux }
 {$IFDEF LINUX}

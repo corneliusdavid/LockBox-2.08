@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4B926884-A46F-40BA-A8A8-EDB057040026}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="packages\L208_r10Seattle.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="packages\L208vd10Seattle.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="L208_r10Seattle">
+        <MSBuild Projects="packages\L208_r10Seattle.dproj"/>
+    </Target>
+    <Target Name="L208_r10Seattle:Clean">
+        <MSBuild Projects="packages\L208_r10Seattle.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="L208_r10Seattle:Make">
+        <MSBuild Projects="packages\L208_r10Seattle.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="L208vd10Seattle">
+        <MSBuild Projects="packages\L208vd10Seattle.dproj"/>
+    </Target>
+    <Target Name="L208vd10Seattle:Clean">
+        <MSBuild Projects="packages\L208vd10Seattle.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="L208vd10Seattle:Make">
+        <MSBuild Projects="packages\L208vd10Seattle.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="L208_r10Seattle;L208vd10Seattle"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="L208_r10Seattle:Clean;L208vd10Seattle:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="L208_r10Seattle:Make;L208vd10Seattle:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
