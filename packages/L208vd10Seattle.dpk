@@ -50,15 +50,15 @@ package L208vd10Seattle;
 {$IMAGEBASE $400000}
 {$DEFINE RELEASE}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'TurboPower LockBox 2.08 Design-time package - VCL150'}
+{$DESCRIPTION 'TurboPower LockBox 2.08 Design-time package'}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   vcl,
   designide,
   vclx,
-  L208_r150;
+  L208_r10Seattle;
 
 contains
   LbDesign in '..\source\LbDesign.pas',

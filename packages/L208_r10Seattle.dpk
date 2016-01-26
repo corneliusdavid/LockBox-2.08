@@ -51,7 +51,7 @@ package L208_r10Seattle;
 {$ENDIF IMPLICITBUILDING}
 {$DESCRIPTION 'TurboPower LockBox 2.08 Run-time package - RTL120'}
 {$RUNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   rtl;
