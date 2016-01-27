@@ -3,6 +3,8 @@ Version 2.08 of the source code from the old TurboPower open-sourced LockBox Lib
 
 NOTE: Version 2.07 was the last stable version commercially sold by TurboPower and was made for Delphi 7. This is version 2.08 which was a beta version to support up through Delphi 2009 (originally code-named tiburon). I've found it to work well and have used it with Delphi 2010 for quite some time. I recently added Delphi XE packages. For support of newer versions of Delphi, see the list below.
 
+UPDATE: Added support for Delphi 10 Seattle and it worked.  I may go back and add other XE* version support...
+
 For more current versions of Lockbox and for 64-bit support, see the following repositories:
 
 * [Jarto Lockbox2](https://github.com/jarto/lockbox2)
