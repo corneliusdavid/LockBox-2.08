@@ -150,6 +150,83 @@
  {$ENDIF}
 {$ENDIF}
 
+{$IFDEF VER230}               { Delphi XE2 Seattle }
+  {$DEFINE VERSION6}          { Version 6 or greater }
+  {$DEFINE VERSION7}
+  {$DEFINE VERSION2005orHigher}
+  {$DEFINE DelphiUnicode}
+ {$IFDEF BCB}
+  {$DEFINE CBuilder}
+  {$ObjExportAll On}
+ {$ENDIF}
+{$ENDIF}
+
+{$IFDEF VER240}               { Delphi XE3 Seattle }
+  {$DEFINE VERSION6}          { Version 6 or greater }
+  {$DEFINE VERSION7}
+  {$DEFINE VERSION2005orHigher}
+  {$DEFINE DelphiUnicode}
+ {$IFDEF BCB}
+  {$DEFINE CBuilder}
+  {$ObjExportAll On}
+ {$ENDIF}
+{$ENDIF}
+
+{$IFDEF VER250}               { Delphi XE4 Seattle }
+  {$DEFINE VERSION6}          { Version 6 or greater }
+  {$DEFINE VERSION7}
+  {$DEFINE VERSION2005orHigher}
+  {$DEFINE DelphiUnicode}
+ {$IFDEF BCB}
+  {$DEFINE CBuilder}
+  {$ObjExportAll On}
+ {$ENDIF}
+{$ENDIF}
+
+{$IFDEF VER260}               { Delphi XE5 Seattle }
+  {$DEFINE VERSION6}          { Version 6 or greater }
+  {$DEFINE VERSION7}
+  {$DEFINE VERSION2005orHigher}
+  {$DEFINE DelphiUnicode}
+ {$IFDEF BCB}
+  {$DEFINE CBuilder}
+  {$ObjExportAll On}
+ {$ENDIF}
+{$ENDIF}
+
+{$IFDEF VER270}               { Delphi XE6 Seattle }
+  {$DEFINE VERSION6}          { Version 6 or greater }
+  {$DEFINE VERSION7}
+  {$DEFINE VERSION2005orHigher}
+  {$DEFINE DelphiUnicode}
+ {$IFDEF BCB}
+  {$DEFINE CBuilder}
+  {$ObjExportAll On}
+ {$ENDIF}
+{$ENDIF}
+
+{$IFDEF VER280}               { Delphi XE7 Seattle }
+  {$DEFINE VERSION6}          { Version 6 or greater }
+  {$DEFINE VERSION7}
+  {$DEFINE VERSION2005orHigher}
+  {$DEFINE DelphiUnicode}
+ {$IFDEF BCB}
+  {$DEFINE CBuilder}
+  {$ObjExportAll On}
+ {$ENDIF}
+{$ENDIF}
+
+{$IFDEF VER290}               { Delphi XE8 Seattle }
+  {$DEFINE VERSION6}          { Version 6 or greater }
+  {$DEFINE VERSION7}
+  {$DEFINE VERSION2005orHigher}
+  {$DEFINE DelphiUnicode}
+ {$IFDEF BCB}
+  {$DEFINE CBuilder}
+  {$ObjExportAll On}
+ {$ENDIF}
+{$ENDIF}
+
 {$IFDEF VER300}               { Delphi 10 Seattle }
   {$DEFINE VERSION6}          { Version 6 or greater }
   {$DEFINE VERSION7}
