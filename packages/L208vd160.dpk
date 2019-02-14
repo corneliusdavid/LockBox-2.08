@@ -22,7 +22,7 @@
  * Contributor(s):
  *
  * ***** END LICENSE BLOCK ***** *)
-package L208vd150;
+package L208vd160;
 
 {$R *.res}
 {$R '..\source\LbDesign.dcr'}
@@ -37,28 +37,28 @@ package L208vd150;
 {$LOCALSYMBOLS OFF}
 {$LONGSTRINGS ON}
 {$OPENSTRINGS ON}
-{$OPTIMIZATION OFF}
+{$OPTIMIZATION ON}
 {$OVERFLOWCHECKS OFF}
 {$RANGECHECKS OFF}
 {$REFERENCEINFO OFF}
 {$SAFEDIVIDE OFF}
-{$STACKFRAMES ON}
+{$STACKFRAMES OFF}
 {$TYPEDADDRESS OFF}
 {$VARSTRINGCHECKS ON}
 {$WRITEABLECONST ON}
 {$MINENUMSIZE 1}
 {$IMAGEBASE $400000}
-{$DEFINE DEBUG}
+{$DEFINE RELEASE}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'TurboPower LockBox 2.08 Design-time package - VCL150'}
+{$DESCRIPTION 'TurboPower LockBox 2.08 Design-time package - XE2'}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   vcl,
   designide,
   vclx,
-  L208_r150;
+  L208_r160;
 
 contains
   LbDesign in '..\source\LbDesign.pas',

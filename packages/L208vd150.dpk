@@ -49,7 +49,7 @@ package L208vd150;
 {$IMAGEBASE $400000}
 {$DESCRIPTION 'TurboPower LockBox 2.08 Design-time package - VCL150'}
 {$DESIGNONLY}
-{$IMPLICITBUILD ON}
+{$IMPLICITBUILD OFF}
 
 requires
   vcl,

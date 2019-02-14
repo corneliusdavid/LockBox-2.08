@@ -18,7 +18,7 @@ uses
 {$R LbBitmap.res}
 
 resourcestring
-  ComponentPkgName = 'LockBox 2.07';
+  ComponentPkgName = 'LockBox 2.08';
   ComponentPkgLic = 'Open Sourced by Turbo Power Software';
   ComponentPkgDesc = 'Encryption, Decryption, and Hashing functions';
 
