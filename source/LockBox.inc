@@ -238,6 +238,38 @@
  {$ENDIF}
 {$ENDIF}
 
+{$IFDEF VER310}               { Delphi 10.1 Berlin }
+  {$DEFINE VERSION6}          { Version 6 or greater }
+  {$DEFINE VERSION7}
+  {$DEFINE VERSION2005orHigher}
+  {$DEFINE DelphiUnicode}
+ {$IFDEF BCB}
+  {$DEFINE CBuilder}
+  {$ObjExportAll On}
+ {$ENDIF}
+{$ENDIF}
+
+{$IFDEF VER320}               { Delphi 10.2 Tokyo }
+  {$DEFINE VERSION6}          { Version 6 or greater }
+  {$DEFINE VERSION7}
+  {$DEFINE VERSION2005orHigher}
+  {$DEFINE DelphiUnicode}
+ {$IFDEF BCB}
+  {$DEFINE CBuilder}
+  {$ObjExportAll On}
+ {$ENDIF}
+{$ENDIF}
+
+{$IFDEF VER330}               { Delphi 10.3 Rio }
+  {$DEFINE VERSION6}          { Version 6 or greater }
+  {$DEFINE VERSION7}
+  {$DEFINE VERSION2005orHigher}
+  {$DEFINE DelphiUnicode}
+ {$IFDEF BCB}
+  {$DEFINE CBuilder}
+  {$ObjExportAll On}
+ {$ENDIF}
+{$ENDIF}
 
 { determine whether CLX is used, should always be on Linux }
 {$IFDEF LINUX}
