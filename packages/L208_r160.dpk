@@ -22,10 +22,10 @@
  * Contributor(s):
  *
  * ***** END LICENSE BLOCK ***** *)
-package L208vd150;
+package L208_r160;
 
 {$R *.res}
-{$R '..\source\LbDesign.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS OFF}
 {$BOOLEVAL OFF}
@@ -47,20 +47,26 @@ package L208vd150;
 {$WRITEABLECONST ON}
 {$MINENUMSIZE 1}
 {$IMAGEBASE $400000}
-{$DESCRIPTION 'TurboPower LockBox 2.08 Design-time package - VCL150'}
-{$DESIGNONLY}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'TurboPower LockBox 2.08 Run-time package - XE2'}
+{$RUNONLY}
 {$IMPLICITBUILD OFF}
 
 requires
-  vcl,
-  designide,
-  vclx,
-  L208_r150;
+  rtl;
 
 contains
-  LbDesign in '..\source\LbDesign.pas',
-  LbKeyEd1 in '..\source\LbKeyEd1.pas' {frmSymmetricKey},
-  LbKeyEd2 in '..\source\LbKeyEd2.pas' {frmRSAKeys},
-  uLbSplash in 'uLbSplash.pas';
+  LbUtils in '..\source\LbUtils.pas',
+  LbBigInt in '..\source\LbBigInt.pas',
+  LBCIPHER in '..\source\LBCIPHER.pas',
+  LbConst in '..\source\LbConst.pas',
+  LBPROC in '..\source\LBPROC.pas',
+  LbRandom in '..\source\LbRandom.pas',
+  LbString in '..\source\LbString.pas',
+  LbAsym in '..\source\LbAsym.pas',
+  LbClass in '..\source\LbClass.pas',
+  LbDSA in '..\source\LbDSA.pas',
+  LbRSA in '..\source\LbRSA.pas';
 
 end.
