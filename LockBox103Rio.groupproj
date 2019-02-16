@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6D83DA65-3A0A-4F9B-83F4-0B201DB6FA6C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="packages\L208_r103Rio.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="packages\L208vd103Rio.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="L208_r103Rio">
+        <MSBuild Projects="packages\L208_r103Rio.dproj"/>
+    </Target>
+    <Target Name="L208_r103Rio:Clean">
+        <MSBuild Projects="packages\L208_r103Rio.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="L208_r103Rio:Make">
+        <MSBuild Projects="packages\L208_r103Rio.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="L208vd103Rio">
+        <MSBuild Projects="packages\L208vd103Rio.dproj"/>
+    </Target>
+    <Target Name="L208vd103Rio:Clean">
+        <MSBuild Projects="packages\L208vd103Rio.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="L208vd103Rio:Make">
+        <MSBuild Projects="packages\L208vd103Rio.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="L208_r103Rio;L208vd103Rio"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="L208_r103Rio:Clean;L208vd103Rio:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="L208_r103Rio:Make;L208vd103Rio:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
